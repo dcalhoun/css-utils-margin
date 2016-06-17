@@ -1,0 +1,39 @@
+{
+  "name": "css-utils-margin",
+  "version": "0.1.0",
+  "description": "Immutable, CSS margin utilities.",
+  "main": "index.js",
+  "style": "index.css",
+  "scripts": {
+    "build": "npm run setup && npm run preprocess",
+    "build-test": "npm run setup && npm run preprocess-test",
+    "lint": "suitcss -c test/config.json index.css build/lint.css && rm build/lint.css",
+    "preprocess": "suitcss index.css build/build.css",
+    "preprocess-test": "suitcss -i test test/test.css build/test.css",
+    "setup": "npm install",
+    "watch": "npm run preprocess-test -- -w -v",
+    "test": "npm run lint"
+  },
+  "devDependencies": {
+    "stylelint-config-suitcss": "^7.0.0",
+    "suitcss-components-test": "*",
+    "suitcss-preprocessor": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dcalhoun/css-utils-margin.git"
+  },
+  "keywords": [
+    "css",
+    "utility",
+    "margin",
+    "atomic",
+    "postcss"
+  ],
+  "author": "David Calhoun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dcalhoun/css-utils-margin/issues"
+  },
+  "homepage": "https://github.com/dcalhoun/css-utils-margin#readme"
+}
