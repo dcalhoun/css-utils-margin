@@ -1,4 +1,6 @@
 # css-utils-margin
+[![Build Status](https://travis-ci.org/dcalhoun/css-utils-margin.svg?branch=master)](https://travis-ci.org/dcalhoun/css-utils-margin)
+
 Immutable, CSS margin utilities.
 
 ## Naming Convention
