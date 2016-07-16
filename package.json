@@ -15,7 +15,7 @@
     "test": "npm run lint"
   },
   "devDependencies": {
-    "stylelint-config-suitcss": "^7.0.0",
+    "stylelint-config-suitcss": "^5.0.0",
     "suitcss-components-test": "*",
     "suitcss-preprocessor": "^2.0.0"
   },
